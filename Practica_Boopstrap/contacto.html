@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | Aroma Café</title>
+
+    <!-- BOOTSTRAP CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#">
+            ☕ Aroma Café
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="productos.html">
+                        Productos
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">
+                        Nosotros
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ================= TITULO ================= -->
+
+<section class="container text-center mt-5">
+
+    <h1 class="display-4">
+        Contáctanos
+    </h1>
+
+    <p class="lead">
+        Envíanos tus dudas o reservas.
+    </p>
+
+</section>
+
+<!-- ================= FORMULARIO ================= -->
+
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-8">
+
+            <div class="card shadow p-4">
+
+                <form>
+
+                    <!-- NOMBRE -->
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Nombre
+                        </label>
+
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Ingrese su nombre">
+
+                    </div>
+
+                    <!-- CORREO -->
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Correo Electrónico
+                        </label>
+
+                        <input type="email"
+                               class="form-control"
+                               placeholder="Ingrese su correo">
+
+                    </div>
+
+                    <!-- TELEFONO -->
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Teléfono
+                        </label>
+
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Ingrese su teléfono">
+
+                    </div>
+
+                    <!-- MENSAJE -->
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Mensaje
+                        </label>
+
+                        <textarea class="form-control"
+                                  rows="5"
+                                  placeholder="Escriba su mensaje"></textarea>
+
+                    </div>
+
+                    <!-- BOTON -->
+
+                    <div class="text-center">
+
+                        <button type="submit"
+                                class="btn btn-success btn-lg">
+
+                            Enviar Mensaje
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= ALERT ================= -->
+
+<div class="container mt-4">
+
+    <div class="alert alert-success text-center">
+
+        ✔ Nuestro equipo responderá pronto.
+
+    </div>
+
+</div>
+
+<!-- ================= ACORDEON ================= -->
+
+<div class="container mt-5">
+
+    <div class="accordion" id="acordeonContacto">
+
+        <!-- ITEM 1 -->
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+                <button class="accordion-button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#pregunta1">
+
+                    Horarios de atención
+
+                </button>
+
+            </h2>
+
+            <div id="pregunta1"
+                 class="accordion-collapse collapse show">
+
+                <div class="accordion-body">
+
+                    Atendemos de lunes a domingo
+                    de 8:00 AM a 10:00 PM.
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ITEM 2 -->
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+                <button class="accordion-button collapsed"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#pregunta2">
+
+                    ¿Dónde estamos ubicados?
+
+                </button>
+
+            </h2>
+
+            <div id="pregunta2"
+                 class="accordion-collapse collapse">
+
+                <div class="accordion-body">
+
+                    Estamos ubicados en el centro de la ciudad.
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= BOTON MODAL ================= -->
+
+<div class="text-center mt-5">
+
+    <button class="btn btn-warning btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#modalReserva">
+
+        Reservar Mesa
+
+    </button>
+
+</div>
+
+<!-- ================= MODAL ================= -->
+
+<div class="modal fade" id="modalReserva">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+
+                    Reserva Exitosa
+
+                </h5>
+
+                <button class="btn-close"
+                        data-bs-dismiss="modal">
+
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                ☕ Gracias por reservar en Aroma Café.
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+
+                    Cerrar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-dark text-white text-center p-3 mt-5">
+
+    <p>
+        © 2026 Aroma Café (Paola Tapia)
+    </p>
+
+</footer>
+
+<!-- BOOTSTRAP JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
